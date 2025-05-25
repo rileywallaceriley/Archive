@@ -6,7 +6,6 @@
   --meta: #666666;
   --card-bg: #ffffff;
 }
-
 body.dark {
   --bg: #1e1e1e;
   --text: #f0f0f0;
@@ -14,110 +13,54 @@ body.dark {
   --meta: #aaaaaa;
   --card-bg: #2b2b2b;
 }
-
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
   margin: 0;
   padding: 20px;
-  transition: background 0.3s, color 0.3s;
 }
-
 h1 {
   text-align: center;
-  margin-top: 0;
 }
-
-h2 {
-  margin: 0 0 5px 0;
-  font-size: 1.25em;
+.container, #posts {
+  max-width: 800px;
+  margin: 0 auto;
 }
-
+.article {
+  background: var(--card-bg);
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 5px solid var(--accent);
+}
 h2 a {
-  color: var(--text);
   text-decoration: none;
+  color: var(--text);
 }
-
-h2 a:hover {
-  opacity: 0.75;
+.meta {
+  color: var(--meta);
+  font-size: 0.9em;
 }
-
-#themeToggle {
-  display: block;
-  margin: 0 auto 20px auto;
-  padding: 6px 12px;
-  background: var(--meta);
-  color: var(--bg);
-  border: none;
-  border-radius: 5px;
+.read-link {
   font-weight: bold;
-  cursor: pointer;
 }
-
 #searchBar {
   display: flex;
   max-width: 600px;
   margin: 0 auto 20px auto;
 }
-
 #search {
   flex: 1;
   padding: 10px;
-  font-size: 1em;
 }
-
 #searchBtn {
   padding: 10px 15px;
-  font-size: 1em;
   background: var(--accent);
   color: var(--bg);
   border: none;
-  cursor: pointer;
 }
-
-.article {
-  margin: 20px 0;
-  padding: 15px;
-  background: var(--card-bg);
-  border-left: 5px solid var(--accent);
-  transition: background 0.3s, color 0.3s;
-}
-
-.meta {
-  font-size: 0.9em;
-  color: var(--meta);
-  margin-bottom: 8px;
-}
-
-.read-link {
-  font-weight: bold;
-  font-size: 0.9em;
-}
-
-.content {
-  margin-top: 20px;
-  line-height: 1.6;
-}
-
-.content p {
-  margin-bottom: 1em;
-}
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.back {
-  margin-top: 30px;
-}
-
-.container, #posts {
-  max-width: 800px;
-  margin: 0 auto;
+#themeToggle {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 12px;
 }
