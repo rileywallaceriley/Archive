@@ -20,7 +20,7 @@ body {
   padding: 20px;
 }
 .container, #posts {
-  max-width: 70%;
+  max-width: 50%;
   margin: 0 auto;
 }
 .article {
